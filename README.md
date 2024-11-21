@@ -41,14 +41,20 @@ O projeto segue a arquitetura padrão MVC:
 
 ## Imagens do Sistema
 
+### Tela Inicial
+![appbemvindo.png](images%2Fappbemvindo.png)
+
 ### Tela de Login
-![Tela de Login](https://link-para-imagem1.png)
+![applogin.png](images%2Fapplogin.png)
 
 ### Tela de Inserção de Dados
-![Inserção de Dados](https://link-para-imagem2.png)
+![appinserirdados.png](images%2Fappinserirdados.png)
 
 ### Tela de Histórico de Cálculos
-![Histórico de Cálculos](https://link-para-imagem3.png)
+![apphistorico.png](images%2Fapphistorico.png)
+
+### Tela de Editar Dados
+![appeditardados.png](images%2Fappeditardados.png)
 
 ---
 

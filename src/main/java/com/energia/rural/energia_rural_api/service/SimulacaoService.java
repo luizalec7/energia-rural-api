@@ -4,12 +4,14 @@ import com.energia.rural.energia_rural_api.dto.SimulacaoRequest;
 import com.energia.rural.energia_rural_api.dto.SimulacaoResponse;
 import com.energia.rural.energia_rural_api.model.*;
 import com.energia.rural.energia_rural_api.repository.*;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
 @Service
+@Transactional
 public class SimulacaoService {
 
     @Autowired

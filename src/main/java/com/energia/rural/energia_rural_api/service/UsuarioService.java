@@ -22,7 +22,7 @@ public class UsuarioService {
         return usuarioRepository.save(usuario);
     }
 
-    public Optional<Usuario> buscarUsuarioPorId(Long id) {
-        return usuarioRepository.findById(id);
+    public Optional<Usuario> buscarUsuarioPorId(Long usuarioId) {
+        return usuarioRepository.findById(usuarioId);
     }
 }

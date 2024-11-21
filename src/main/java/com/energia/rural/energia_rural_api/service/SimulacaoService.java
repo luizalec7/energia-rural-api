@@ -45,7 +45,7 @@ public class SimulacaoService {
         simulacao = simulacaoRepository.save(simulacao);
 
         SimulacaoResponse response = new SimulacaoResponse();
-        response.setId(simulacao.getId());
+        response.setId(simulacao.getSimulacaoId());
         response.setUsuarioNome(usuario.getNome());
         response.setRegiao(localizacao.getRegiao());
         response.setConsumoEstimado(simulacao.getConsumoEstimado());

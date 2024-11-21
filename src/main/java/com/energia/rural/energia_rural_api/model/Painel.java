@@ -9,7 +9,8 @@ import lombok.Data;
 public class Painel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "PAINEL_ID", nullable = false)
+    private Long painelId;
 
     @Column(nullable = false)
     private Double potencia;

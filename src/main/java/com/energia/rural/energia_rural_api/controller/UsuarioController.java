@@ -25,7 +25,7 @@ public class UsuarioController {
     public CollectionModel<EntityModel<Usuario>> listarUsuarios() {
         List<EntityModel<Usuario>> usuarios = usuarioService.listarUsuarios().stream()
                 .map(usuario -> EntityModel.of(usuario,
-                        linkTo(methodOn(UsuarioController.class).buscarUsuarioPorId(usuario.getId())).withSelfRel(),
+                        linkTo(methodOn(UsuarioController.class).buscarUsuarioPorId(usuario.getUsuarioId())).withSelfRel(),
                         linkTo(methodOn(UsuarioController.class).listarUsuarios()).withRel("usuarios")))
                 .collect(Collectors.toList());
         return CollectionModel.of(usuarios, linkTo(methodOn(UsuarioController.class).listarUsuarios()).withSelfRel());
@@ -35,7 +35,7 @@ public class UsuarioController {
     public ResponseEntity<EntityModel<Usuario>> criarUsuario(@RequestBody Usuario usuario) {
         Usuario novoUsuario = usuarioService.criarUsuario(usuario);
         EntityModel<Usuario> usuarioModel = EntityModel.of(novoUsuario,
-                linkTo(methodOn(UsuarioController.class).buscarUsuarioPorId(novoUsuario.getId())).withSelfRel(),
+                linkTo(methodOn(UsuarioController.class).buscarUsuarioPorId(novoUsuario.getUsuarioId())).withSelfRel(),
                 linkTo(methodOn(UsuarioController.class).listarUsuarios()).withRel("usuarios"));
         return ResponseEntity.ok(usuarioModel);
     }

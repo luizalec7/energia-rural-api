@@ -9,7 +9,8 @@ import lombok.Data;
 public class Localizacao {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "LOCALIZACAO_ID", nullable = false)
+    private Long localizacaoId;
 
     @Column(nullable = false)
     private String regiao;

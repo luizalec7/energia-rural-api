@@ -65,3 +65,34 @@ O projeto segue a arquitetura padrão MVC:
    ```bash
    
    git clone https://github.com/luizalec7/energia-rural-api.git
+
+2. **Configuração do application.properties:**
+
+Comentar o código do deploy quando iniciar a api local, e comentar o local quando realizar o deploy:
+
+
+![img.png](img.png)
+
+## Link do DEPLOY
+
+    https://energia-rural-api.onrender.com
+
+1. **Como testar:**
+
+Com o postman, testar todos os Posts e Gets:
+
+## Resumo dos Endpoints
+
+| Endpoint        | Método | Descrição                          |
+|-----------------|--------|------------------------------------|
+| `/usuarios`     | GET    | Lista todos os usuários (se houver). |
+| `/usuarios`     | POST   | Cria um novo usuário.              |
+| `/paineis`      | GET    | Lista todos os painéis.            |
+| `/paineis`      | POST   | Cria um novo painel.               |
+| `/localizacoes` | GET    | Lista todas as localizações.       |
+| `/localizacoes` | POST   | Cria uma nova localização.         |
+| `/simulacoes`   | POST   | Cria uma nova simulação.           |
+
+## Link do Vídeo demonstrativo do projeto Energia Rural API
+
+https://www.youtube.com/watch?v=z6nGSC68r04

@@ -2,6 +2,10 @@
 FROM maven:3.8.5-openjdk-17 AS build
 WORKDIR /app
 
+# Configurar codificação UTF-8 para Maven e Java
+ENV MAVEN_OPTS="-Dfile.encoding=UTF-8"
+ENV JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF-8"
+
 # Copiar o arquivo de configuração do Maven e baixar dependências
 COPY pom.xml .
 RUN mvn dependency:go-offline -B
